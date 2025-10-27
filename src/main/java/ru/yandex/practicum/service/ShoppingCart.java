@@ -41,7 +41,7 @@ public class ShoppingCart{
         double totalPriceVegetarianWithoutDiscount = 0;
         for (Food item :items) {
             if (item.isVegetarian()) {
-                totalPriceVegetarianWithoutDiscount =+ item.getPrice() * item.getAmount();
+                totalPriceVegetarianWithoutDiscount += item.getPrice() * item.getAmount();
             }
         }
         return totalPriceVegetarianWithoutDiscount;
