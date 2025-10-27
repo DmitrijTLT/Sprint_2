@@ -23,8 +23,9 @@ public class Main {
         double totalPriceVegetarianWithoutDiscount = cart.getTotalPriceVegetarianWithoutDiscount();
 
         // Выводим значения для созданной корзины
-        System.out.println("Общая сумма товаров без скидки = " + totalPriceWithoutDiscount);
-        System.out.println("Общая сумма товаров со скидкой = " + totalPriceWithDiscount);
-        System.out.println("Cумма всех вегетарианских продуктов без скидки = " + totalPriceVegetarianWithoutDiscount);
+        String formattedString = String.format("Общая сумма товаров без скидки = %f %n", totalPriceWithoutDiscount);
+        formattedString += String.format("Общая сумма товаров со скидкой = %f %n", totalPriceWithDiscount);
+        formattedString += String.format("Cумма всех вегетарианских продуктов без скидки = %f %n", totalPriceVegetarianWithoutDiscount);
+        System.out.println(formattedString);
     }
 }
