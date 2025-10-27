@@ -7,9 +7,10 @@ public abstract class Food {
     protected boolean isVegetarian;
 
     // Конструктор класса Food
-    public Food(int amount, double price) {
+    public Food(int amount, double price, boolean isVegetarian) {
         this.amount = amount;
         this.price = price;
+        this.isVegetarian = isVegetarian;
     }
 
     // Геттер переменной amount
