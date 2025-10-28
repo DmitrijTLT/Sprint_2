@@ -8,8 +8,7 @@ public class Apple extends Food implements Discountable{
 
     // Конструктор класса Apple
     public Apple(int amount, double price, String colour) {
-        super(amount, price);
-        this.isVegetarian = true;
+        super(amount, price, true);
         this.colour = colour;
     }
 

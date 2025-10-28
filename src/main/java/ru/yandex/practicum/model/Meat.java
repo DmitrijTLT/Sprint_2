@@ -5,8 +5,7 @@ import ru.yandex.practicum.model.constants.Discount;
 public class Meat extends Food implements Discountable{
     // Конструктор класса Meat
     public Meat(int amount, double price) {
-        super(amount, price);
-        this.isVegetarian = false;
+        super(amount, price, false);
     }
 
     //Переопределям метод getDiscount()
